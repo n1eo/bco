@@ -2,9 +2,10 @@ pragma solidity ^0.4.11;
 
 import "./token/FreezableToken.sol";
 import "./ownership/Ownable.sol";
+import "./ownership/HasNoEther";
 import "./math/SafeMath.sol";
 
-contract BcoTokenLock is Ownable {
+contract BcoTokenLock is Ownable, HasNoEther {
     using SafeMath for uint256;
 
     // @dev How many investors we have now

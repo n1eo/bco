@@ -289,7 +289,7 @@ contract Bco is Claimable, Contactable, HasNoEther, FreezableToken {
 }
 
 
-contract BcoTokenLock is Ownable {
+contract BcoTokenLock is Ownable, HasNoEther {
     using SafeMath for uint256;
 
     // @dev How many investors we have now
